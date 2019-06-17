@@ -1,0 +1,32 @@
+  .navbar {
+    background-image: url("cityscape.jpg");
+    background-size: 250px 200px;
+    background-repeat: repeat-x;
+    min-height: 200px;
+    background-position: absolute;
+}
+  .navbar-mood-city {
+    padding-top: 160px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 20px
+  }
+  .nav-link {
+    padding-top: 160px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 80px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #D9FFEF;
+}
+  a {
+  color: #D9FFEF;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+  .navbar-mood-city {
+    font-style: normal;
+    font-family: sans-serif;
+  }
