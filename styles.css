@@ -21,12 +21,31 @@
     color: #D9FFEF;
 }
   a {
-  color: #D9FFEF;
-  text-decoration: none;
-  background-color: transparent;
-  font-size: 20px;
+   color: #D9FFEF;
+   text-decoration: none;
+   background-color: transparent;
+   font-size: 20px;
 }
   .navbar-mood-city {
     font-style: normal;
+    font-family: sans-serif;
+  }
+
+@font-face {
+    font-family: NewRegular;
+    src: url(new-regular.ttf);
+    font-weight:400;
+}
+  h2 {
+    font-family: NewRegular;
+    font-size: 70px;
+  }
+  h4 {
+    font-family: NewRegular;
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 20px;
+    text-align: justify;
     font-family: sans-serif;
   }
