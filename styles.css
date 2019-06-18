@@ -23,6 +23,12 @@
 .my-navbar .navbar-mood-city .navbar-nav {
   vertical-align: bottom;
 }
+.custom-toggler.navbar-toggler {
+  border-color: #D9FFEF;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(217,255,239, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 @font-face {
   font-family: NewRegular;
   src: url(new-regular.ttf);
