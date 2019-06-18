@@ -1,51 +1,43 @@
-  .navbar {
-    background-image: url("cityscape.jpg");
-    background-size: 250px 200px;
-    background-repeat: repeat-x;
-    min-height: 200px;
-    background-position: absolute;
+.navbar {
+  background-image: url("cityscape.jpg");
+  background-size: 250px 200px;
+  background-repeat: repeat-x;
+  min-height: 200px;
+  background-position: absolute;
 }
-  .navbar-mood-city {
-    padding-top: 160px;
-    padding-right: 30px;
-    padding-bottom: 0px;
-    padding-left: 20px
-  }
-  .nav-link {
-    padding-top: 160px;
-    padding-right: 30px;
-    padding-bottom: 0px;
-    padding-left: 80px;
-  }
-  .navbar-light .navbar-nav .nav-link {
-    color: #D9FFEF;
+.my-navbar {
+  background-color: #718c83;
 }
-  a {
-   color: #D9FFEF;
-   text-decoration: none;
-   background-color: transparent;
-   font-size: 20px;
+.my-navbar .navbar-mood-city {
+  color: #D9FFEF;
 }
-  .navbar-mood-city {
-    font-style: normal;
-    font-family: sans-serif;
-  }
-
+.my-navbar .navbar-mood-city:hover {
+  color: #4c5445;
+}
+.my-navbar .nav-link {
+  color: #D9FFEF;
+}
+.my-navbar .nav-link:hover {
+  color: #4c5445;
+}
+.my-navbar .navbar-mood-city .navbar-nav {
+  vertical-align: bottom;
+}
 @font-face {
-    font-family: NewRegular;
-    src: url(new-regular.ttf);
-    font-weight:400;
+  font-family: NewRegular;
+  src: url(new-regular.ttf);
+  font-weight:400;
 }
-  h2 {
-    font-family: NewRegular;
-    font-size: 70px;
-  }
-  h4 {
-    font-family: NewRegular;
-    font-size: 50px;
-  }
-  h3 {
-    font-size: 20px;
-    text-align: justify;
-    font-family: sans-serif;
-  }
+h2 {
+  font-family: NewRegular;
+  font-size: 70px;
+}
+h4 {
+  font-family: NewRegular;
+  font-size: 50px;
+}
+h3 {
+  font-size: 20px;
+  text-align: justify;
+  font-family: sans-serif;
+}
