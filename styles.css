@@ -10,6 +10,12 @@
 }
 .my-navbar .navbar-mood-city {
   color: #D9FFEF;
+    font-family: Bobber;
+    font-size: 50px;
+    }
+  }
+
+
 }
 .my-navbar .navbar-mood-city:hover {
   color: #4c5445;
@@ -49,8 +55,8 @@ h3 {
 }
 
 img.animated-gif{
-  width: 500px;
-  height: 250px;
+  width: 900px;
+  height: 500px;
 
 
 }
@@ -60,6 +66,8 @@ img.animated-gif{
   width: 300px;
   padding: 10px;
 }
+
+
 
 
 You can do this:
