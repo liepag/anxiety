@@ -47,3 +47,21 @@ h3 {
   text-align: justify;
   font-family: sans-serif;
 }
+
+img.animated-gif{
+  width: 500px;
+  height: 250px;
+
+
+}
+
+  .mascot {
+  float: left;
+  width: 300px;
+  padding: 10px;
+}
+
+
+You can do this:
+
+CSS
