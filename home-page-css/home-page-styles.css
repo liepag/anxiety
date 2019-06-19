@@ -54,9 +54,14 @@ img.animated-gif{
   height: 500px;
 }
 .mascot {
-  float: left;
   width: 300px;
-  padding: 10px;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
 }
 .center-block {
     display: block;
@@ -66,10 +71,3 @@ img.animated-gif{
  body {
    background-color: #718c83;
  }
-
-
-
-
-You can do this:
-
-CSS
