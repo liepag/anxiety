@@ -18,6 +18,7 @@
 }
 .my-navbar .nav-link {
   color: #D9FFEF;
+  font-family: Bobber;
 }
 .my-navbar .nav-link:hover {
   color: #4c5445;
