@@ -54,3 +54,11 @@ p {
 body {
   background-color: #718c83;
 }
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 150px;
+    margin-inline-end: 150px;
+}
