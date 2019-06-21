@@ -12,9 +12,10 @@
   color: #D9FFEF;
     font-family: Bobber;
     font-size: 50px;
+    text-decoration: none;
 }
 .my-navbar .navbar-mood-city:hover {
-  color: #4c5445;
+  color: #D9FFEF;
 }
 .my-navbar .nav-link {
   color: #D9FFEF;
