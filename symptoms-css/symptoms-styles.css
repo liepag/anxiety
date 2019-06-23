@@ -51,3 +51,12 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+piechart: {
+    width: 200,
+    height: 300,
+    type: 'pie',
+    style: {
+        'float': 'right'
+    }
+}
