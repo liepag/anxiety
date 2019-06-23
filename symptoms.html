@@ -11,7 +11,27 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="symptoms-css/symptoms-styles.css" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  </style>
 </head>
+
 <body>
   <nav class="navbar my-navbar navbar-expand-lg align-items-end">
     <a class="navbar-mood-city" href="home-page.html">MOOD CITY</a>
@@ -33,75 +53,78 @@
     </div>
   </nav>
 
-  <div id="piechart"></div>
-
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-  <script type="text/javascript">
-
-  google.charts.load('current', {'packages':['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
-
-  function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-    ['Symptoms', 'Prevalence'],
-    ['Thoughts', 3.5],
-    ['Feelings', 4],
-    ['Behaviours', 2.5],
-
-  ]);
-
-    var options = {backgroundColor: 'transparent',
-                  'title':'Anxiety', 'width':550, 'height':400};
-
-    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-    chart.draw(data, options);
-  }
-
-
-
-
-  </script>
-
-
 
   <div class="container">
     <div class="row">
       <div class="col">
         <h2>Symptoms</h2>
         <p> Keep in mind, people with anxiety disorders experience symptoms differently. You might have an anxiety disorder if you experience at least three of the following symptoms for more than six months.</p>
-        <ul><b>Thoughts</b>
-          <li>You think that danger is everywhere</li>
-          <li>You think that something is dangerous when it’s not</li>
-          <li>You think that bad things are going to happen</li>
-          <li>You are very critical of yourself</li>
-          <li>Your worrying is out of control</li>
-        </ul>
-        <ul><b>Feelings</b>
-          <li>You feel tense most times</li>
-          <li>You feel restless, irritable or angry</li>
-          <li>You find it difficult to focus and concentrate</li>
-          <li>You are hypervigilant to threat cues</li>
-          <li>Your heart is pounding or racing</li>
-          <li>You feel numb</li>
-          <li>You sweat a lot</li>
-          <li>You have an upset stomach</li>
-          <li>You have headaches</li>
-          <li>You are very tired all the time</li>
-          <li>You feel like your throat is closing up</li>
-          <li>You are short of breath</li>
-          <li>You feel dizzy</li>
-        </ul>
-        <ul><b>Behaviours</b>
-          <li>You avoid situations, people and things</li>
-          <li>You cling to people for safety and you find separation very difficult</li>
-          <li>You do things over and over again</li>
-          <li>You ask for reassurance a lot</li>
-          <li>You rely on others to get you through difficult times or you won’t allow people to help you</li>
-          <li>You can’t sleep</li>
-          <li>You prepare for all that could go wrong</li>
-        </ul>
-      </div>
+
+        <div id="piechart"></div>
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+        <script type="text/javascript">
+
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+          ['Symptoms', 'Prevalence'],
+          ['Thoughts', 5],
+          ['Feelings', 13],
+          ['Behaviours', 7],
+
+        ]);
+
+          var options = {backgroundColor: 'transparent',
+                        'title':'Anxiety Disorders', 'width':550, 'height':400};
+
+          var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+          chart.draw(data, options);
+        }
+        </script>
+
+  <div class="row">
+  <div class="column" style="background-color: #718c83;">
+    <h2>Thoughts</h2>
+    <li>You think that danger is everywhere</li>
+    <li>You think that something is dangerous when it’s not</li>
+    <li>You think that bad things are going to happen</li>
+    <li>You are very critical of yourself</li>
+    <li>Your worrying is out of control</li>
+    </div>
+
+  <div class="column" style="background-color: #718c83;">
+    <h2>Feelings</h2>
+      <li>You feel tense most times</li>
+      <li>You feel restless, irritable or angry</li>
+      <li>You find it difficult to focus and concentrate</li>
+      <li>You are hypervigilant to threat cues</li>
+      <li>Your heart is pounding or racing</li>
+      <li>You feel numb</li>
+      <li>You sweat a lot</li>
+      <li>You have an upset stomach</li>
+      <li>You have headaches</li>
+      <li>You are very tired all the time</li>
+      <li>You feel like your throat is closing up</li>
+      <li>You are short of breath</li>
+      <li>You feel dizzy</li>
+  </div>
+
+  <div class="column" style="background-color: #718c83;">
+    <h2>Behaviours</h2>
+    <li>You avoid situations, people and things</li>
+    <li>You cling to people for safety and you find separation very difficult</li>
+    <li>You do things over and over again</li>
+    <li>You ask for reassurance a lot</li>
+    <li>You rely on others to get you through difficult times or you won’t allow people to help you</li>
+    <li>You can’t sleep</li>
+    <li>You prepare for all that could go wrong</li>
+  </div>
+</div>
+
     </div>
   </div>
 </body>
