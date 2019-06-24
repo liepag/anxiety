@@ -50,7 +50,8 @@ h4 {
 h3 {
   font-size: 20px;
   text-align: justify;
-  font-family: sans-serif;
+  font-family: Helvetica Neue, sans-serif;
+  line-height: 1.5em;
 }
 img.animated-gif{
   width: 900px;
@@ -73,4 +74,11 @@ img.animated-gif{
  }
  body {
    background-color: #718c83;
+ }
+ .links {
+   color: #4c5445;
+ }
+ .links:hover {
+   color: #D9FFEF;
+  text-decoration: none;
  }
