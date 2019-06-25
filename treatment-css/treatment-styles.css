@@ -1,0 +1,101 @@
+.navbar {
+ background-image: url("cityscape.jpg");
+ background-size: 250px 200px;
+ background-repeat: repeat-x;
+ min-height: 200px;
+ background-position: absolute;
+ /* box-shadow: 0 0 16px rgba(0, 0, 0, 0.5); */
+}
+.my-navbar {
+ background-color: #718c83;
+}
+.my-navbar .navbar-mood-city {
+ color: #D9FFEF;
+   font-family: Bobber;
+   font-size: 37px;
+   text-decoration: none;
+}
+.my-navbar .navbar-mood-city:hover {
+ color: #D9FFEF;
+}
+.my-navbar .nav-link {
+ color: #D9FFEF;
+ font-family: Bobber;
+}
+.my-navbar .nav-link:hover {
+ color: #4c5445;
+}
+.my-navbar .navbar-mood-city .navbar-nav {
+ vertical-align: bottom;
+}
+.custom-toggler.navbar-toggler {
+ border-color: #D9FFEF;
+}
+.custom-toggler .navbar-toggler-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(217,255,239, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-rounded {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+.treatment-title {
+  text-align: center;
+}
+@font-face {
+ font-family: NewRegular;
+ src: url(new-regular.ttf);
+ font-weight:400;
+}
+h1 {
+  font-family: NewRegular;
+  font-size: 70px;
+}
+h2 {
+  font-family: NewRegular;
+  font-size: 60px;
+}
+p {
+  text-align: justify;
+  font-family: Helvetica Neue;
+  line-height: 2em;
+  font-size: 16px;
+}
+body {
+  background-color: #718c83;
+}
+.treatment {
+text-align: left;
+padding-top: 20px;
+padding-bottom: 0;
+}
+.text {
+  padding-top: 20px;
+  font-family: Helvetica Neue;
+  line-height: 2em;
+}
+.img__description-therapy{
+  display: none;
+}
+.img__description-medication{
+  display: none;
+}
+.hover{
+  cursor: pointer;
+}
+.help {
+  text-align: center;
+}
+.red {
+  color: #da3a20;
+}
+.blue {
+  color: #3669c9;
+}
+.yellow{
+  color: #fd9827;
+}
