@@ -35,6 +35,9 @@
 }
 body {
   background-color: #718c83;
+  font-family: Helvetica Neue;
+  font-style: 16px;
+  line-height: 2em;
 }
 @font-face {
   font-family: NewRegular;
@@ -51,7 +54,6 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
 piechart: {
     width: 300,
     height: 400,
@@ -60,7 +62,6 @@ piechart: {
         'float': 'right'
     }
 }
-
 piechart {
   float: left;
 }

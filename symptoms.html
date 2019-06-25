@@ -11,7 +11,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="symptoms-css/symptoms-styles.css" rel="stylesheet">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
   * {
@@ -23,28 +22,22 @@
     padding: 10px;
     height: 300px;
   }
-
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
   </style>
-
   <style>
   p {
-  text-indent: 2.0em;
+    text-indent: 2.0em;
   }
   div {
-  text-align: justify;
-  text-justify: inter-word;
-}
+    text-align: justify;
+    text-justify: inter-word;
+  }
   </style>
-
 </head>
-
-
-
 <body>
   <nav class="navbar my-navbar navbar-expand-lg align-items-end">
     <a class="navbar-mood-city" href="home-page.html">MOOD CITY</a>
@@ -65,57 +58,51 @@
       </ul>
     </div>
   </nav>
-
-
   <div class="container">
     <div class="row">
       <div class="col">
         <h2>Symptoms</h2>
         <p>Keep in mind, people with anxiety disorders experience symptoms differently. You might have an anxiety disorder if you experience at least three of the following symptoms for more than six months. Anxiety is intense feelings of being afraid, nervous, tense or worried that are too strong for the situaton, go on too long and get in the way of normal life. There are several types of anxiety disorders. The type of anxiety is related to what the fears and worries are about and how they are handled.</p>
-        <p> Anxiety isn't caused by any one thing, but usually happens because of a combination of things. It can be caused by bad experiences, stress, chronic illness, or chamicals in the brain not working like they should.</p>
+        <p> Anxiety isn't caused by any one thing, but usually happens because of a combination of things. It can be caused by bad experiences, stress, chronic illness, or chemicals in the brain not working like they should.</p>
+      </div>
+      <div id="piechart"></div>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
 
-</div>
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
 
-<div id="piechart"></div>
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Symptoms', 'Prevalence'],
+          ['Thoughts', 5],
+          ['Feelings', 13],
+          ['Behaviours', 7],
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        ]);
 
-<script type="text/javascript">
+        var options = {backgroundColor: 'transparent',
+        'title':'Anxiety Disorders', 'width':550, 'height':400};
 
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-function drawChart() {
-  var data = google.visualization.arrayToDataTable([
-  ['Symptoms', 'Prevalence'],
-  ['Thoughts', 5],
-  ['Feelings', 13],
-  ['Behaviours', 7],
-
-]);
-
-  var options = {backgroundColor: 'transparent',
-                'title':'Anxiety Disorders', 'width':550, 'height':400};
-
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.draw(data, options);
-}
-</script>
-</div>
-
-
-  <div class="row">
-  <div class="column" style="background-color: #718c83;">
-    <h2>Thoughts</h2>
-    <li>You think that danger is everywhere</li>
-    <li>You think that something is dangerous when it’s not</li>
-    <li>You think that bad things are going to happen</li>
-    <li>You are very critical of yourself</li>
-    <li>Your worrying is out of control</li>
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+      }
+      </script>
     </div>
-
-  <div class="column" style="background-color: #718c83;">
-    <h2>Feelings</h2>
+    <div class="row">
+      <div class="col">
+        <h2>Thoughts</h2>
+      </ul>
+      <li>You think that danger is everywhere</li>
+      <li>You think that something is dangerous when it’s not</li>
+      <li>You think that bad things are going to happen</li>
+      <li>You are very critical of yourself</li>
+      <li>Your worrying is out of control</li>
+      <ul>
+      </div>
+      <div class="col">
+        <h2>Feelings</h2>
+      </ul>
       <li>You feel tense most times</li>
       <li>You feel restless, irritable or angry</li>
       <li>You find it difficult to focus and concentrate</li>
@@ -129,21 +116,21 @@ function drawChart() {
       <li>You feel like your throat is closing up</li>
       <li>You are short of breath</li>
       <li>You feel dizzy</li>
+    </ul>
   </div>
-
-  <div class="column" style="background-color: #718c83;">
+  <div class="col">
     <h2>Behaviours</h2>
-    <li>You avoid situations, people and things</li>
-    <li>You cling to people for safety and you find separation very difficult</li>
-    <li>You do things over and over again</li>
-    <li>You ask for reassurance a lot</li>
-    <li>You rely on others to get you through difficult times or you won’t allow people to help you</li>
-    <li>You can’t sleep</li>
-    <li>You prepare for all that could go wrong</li>
+    <ul>
+      <li>You avoid situations, people and things</li>
+      <li>You cling to people for safety and you find separation very difficult</li>
+      <li>You do things over and over again</li>
+      <li>You ask for reassurance a lot</li>
+      <li>You rely on others to get you through difficult times or you won’t allow people to help you</li>
+      <li>You can’t sleep</li>
+      <li>You prepare for all that could go wrong</li>
+    </ul>
   </div>
 </div>
-
-    </div>
-  </div>
+</div>
 </body>
 </html>
