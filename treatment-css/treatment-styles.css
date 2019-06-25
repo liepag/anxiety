@@ -62,8 +62,8 @@ h2 {
 p {
   text-align: justify;
   font-family: Helvetica Neue;
-  line-height: 1.5em;
-  font-size: 17px;
+  line-height: 2em;
+  font-size: 16px;
 }
 body {
   background-color: #718c83;
@@ -76,7 +76,7 @@ padding-bottom: 0;
 .text {
   padding-top: 20px;
   font-family: Helvetica Neue;
-  line-height: 1.5em;
+  line-height: 2em;
 }
 .img__description-therapy{
   display: none;
