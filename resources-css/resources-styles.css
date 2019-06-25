@@ -50,9 +50,10 @@ h4 {
 h5 {
   font-family: NewRegular;
   font-size: 40px;
+  text-align: right;
 }
 p {
-  font-family: sans-serif;
+  font-family: Helvetica Neue;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -97,10 +98,11 @@ a:hover {
 }
 form {
   box-sizing: border-box;
-  /* border-radius: 50%; */
-  background-color: #586e67;
   text-align: center;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  padding-top: 30px;
+}
+.subscribe {
+  vertical-align: bottom;
 }
 .email-input {
   display: flex;
@@ -148,3 +150,22 @@ fieldset[disabled] .btn-sample.active {
   color: #D9FFEF;
   background-color: #2F342B;
 }
+img.animated-gif{
+  width: 900px;
+  height: 500px;
+}
+.mascot {
+  width: 180px;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
