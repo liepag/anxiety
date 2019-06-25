@@ -1,4 +1,3 @@
-
 .navbar {
   background-image: url("cityscape.jpg");
   background-size: 250px 200px;
@@ -80,7 +79,7 @@ img.animated-gif{
  }
  .links:hover {
    color: #D9FFEF;
-  text-decoration: none;
+   text-decoration: none;
  }
  .red {
    color: #da3a20;
