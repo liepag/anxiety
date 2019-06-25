@@ -53,6 +53,7 @@ p {
   font-family: sans-serif;
   padding-top: 10px;
   padding-bottom: 10px;
+  float: right;
 }
 piechart: {
     width: 300,
@@ -61,10 +62,9 @@ piechart: {
     style: {
         'float': 'right'
     }
-
 piechart {
   float: left;
 }
-p {
-  float: right;
+ul li {
+  text-align: justify;
 }
