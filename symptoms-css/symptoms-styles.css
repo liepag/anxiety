@@ -60,3 +60,10 @@ piechart: {
         'float': 'right'
     }
 }
+
+piechart {
+  float: left;
+}
+p {
+  float: right;
+}
