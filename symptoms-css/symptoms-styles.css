@@ -61,7 +61,7 @@ piechart: {
     style: {
         'float': 'right'
     }
-}
+
 piechart {
   float: left;
 }
