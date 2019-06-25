@@ -90,3 +90,12 @@ padding-bottom: 0;
 .help {
   text-align: center;
 }
+.red {
+  color: #da3a20;
+}
+.blue {
+  color: #3669c9;
+}
+.yellow{
+  color: #fd9827;
+}
