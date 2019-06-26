@@ -1,37 +1,37 @@
 .navbar {
- background-image: url("cityscape.jpg");
- background-size: 250px 200px;
- background-repeat: repeat-x;
- min-height: 200px;
- background-position: absolute;
+  background-image: url("cityscape.jpg");
+  background-size: 250px 200px;
+  background-repeat: repeat-x;
+  min-height: 200px;
+  background-position: absolute;
 }
 .my-navbar {
- background-color: #718c83;
+  background-color: #718c83;
 }
 .my-navbar .navbar-mood-city {
- color: #D9FFEF;
- font-family: Bobber;
- font-size: 37px;
- text-decoration: none;
+  color: #D9FFEF;
+  font-family: Bobber;
+  font-size: 50px;
+  text-decoration: none;
 }
 .my-navbar .navbar-mood-city:hover {
- color: #D9FFEF;
+  color: #D9FFEF;
 }
 .my-navbar .nav-link {
- color: #D9FFEF;
- font-family: Bobber;
+  color: #D9FFEF;
+  font-family: Bobber;
 }
 .my-navbar .nav-link:hover {
- color: #fd9827;
+  color: #fd9827;
 }
 .my-navbar .navbar-mood-city .navbar-nav {
- vertical-align: bottom;
+  vertical-align: bottom;
 }
 .custom-toggler.navbar-toggler {
- border-color: #D9FFEF;
+  border-color: #D9FFEF;
 }
 .custom-toggler .navbar-toggler-icon {
- background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(217,255,239, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(217,255,239, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .custom-rounded {
   height: 300px;

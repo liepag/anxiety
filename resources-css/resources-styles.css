@@ -16,7 +16,7 @@
 }
 .my-navbar .navbar-mood-city:hover {
   color: #D9FFEF;
-}  
+}
 .my-navbar .nav-link {
   color: #D9FFEF;
   font-family: Bobber;
@@ -59,8 +59,6 @@ p {
 }
 body {
   background-color: #718c83;
-  font-family: Helvetica Neue;
-  line-height: 1.5em;
 }
 p {
   display: block;
